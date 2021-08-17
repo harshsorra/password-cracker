@@ -1,0 +1,8 @@
+For part 2, the guesses per second (gps) dropped to a low of around 100gps for online brute forcing a website with a fixed username and a list of passwords.
+Again, the file used for password was the rockyou.txt
+The screenshot of the output is shown where we are able to login as admin and the django terminal also shows the logged in message.
+The possible countermeasures to overcome this type of attack are:
+Adding authentication tokens with short timeouts for users so that simple brute force cannot work.
+Adding a counter of how many times a particular user has tried logging in, if it exceeds that counter then just block user from logging in again for a particular duration.
+Also, we can add 2 Factor Authorization or Multi-Factor Authorization so that even if a hacker gets the correct password, they cannot login in the given website (though that password can be used against that user for different website since people have common passwords but atleast for our website we can be sure)
+We can add CAPTCHAs and mandatory delays as well.

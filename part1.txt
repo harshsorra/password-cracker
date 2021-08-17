@@ -1,0 +1,3 @@
+The password found for username = admin was "adminpassword".
+The file used to look for passwords was rockyou.txt which can be found at https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
+And I have attached the screenshot of the output in guesses per second (gps) which turns out to be 1035143 gps for offline password/hash cracking.
